@@ -3,6 +3,8 @@ import Characters from '../components/Characters';
 import { getCharacters, getCharactersLoading } from '../selectors/charactersSelectors';
 import { fetchCharacters } from '../actions/charactersActions';
 import { useSelector, useDispatch } from 'react-redux';
+import styles from './AllCharacters.css';
+
 
 function AllCharacters() {
 
@@ -18,7 +20,10 @@ function AllCharacters() {
   if(loading) return <h1>Retrieving Characters...</h1>;
 
   return (
-    <Characters characters={list} />
+    <div className={styles.AllCharacters}>
+      <h1>Last Airbender Characters</h1>
+      <Characters characters={list} />
+    </div>
   );
 }
 
