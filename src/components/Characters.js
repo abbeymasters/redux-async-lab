@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character';
+import styles from './Characters.css';
 
 const Characters = ({ characters }) => {
   const allCharacters = characters.map(character => {
-    <li key={character._id}>
+    return <li key={character.id}>
       <Character {...character} />
     </li>;
   });
 
   return (
-    <ul>
+    <ul className={styles.Characters}>
       {allCharacters}
     </ul>
   );
@@ -18,8 +19,8 @@ const Characters = ({ characters }) => {
 
 Characters.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
-    _id: PropTypes.string.isRequired,
-    photoUrl: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string,
     name: PropTypes.string.isRequired
   })).isRequired
 };
