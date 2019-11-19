@@ -6,6 +6,5 @@
 * [Travis] (https://travis-ci.com/abbeymasters/redux-async-lab/builds/137094101)
 * [Avatar character list with promises] (https://github.com/abbeymasters/redux-async-lab/pull/2)
 * [Travis] (https://travis-ci.com/abbeymasters/redux-async-lab/builds/137095453)
-* [Simpsons Quotes] ()
-* [Travis] ()
+* [Netlify] (https://tender-mahavira-954074.netlify.com)
 
