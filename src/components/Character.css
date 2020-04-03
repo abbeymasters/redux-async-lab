@@ -1,0 +1,13 @@
+.Character {
+  img {
+    border-radius: 10px;
+    width: 300px;
+    height: 225px;
+  }
+   h1 {
+     font-family: Roboto;
+     font-size: 28px;
+     color: #539818;
+     text-align: center;
+   }
+}
